@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Priyanshu Rawat | Portfolio</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -10,9 +10,9 @@
 <style>
 :root {
   --bg: #000000;
-  --card: #0b0b0b;
-  --text: #f1f5f9;
-  --accent: #22d3ee;
+  --card: #0d0d0d;
+  --text: #e5e7eb;
+  --accent: #38bdf8;
 }
 
 .light {
@@ -27,86 +27,88 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Segoe UI", sans-serif;
+  font-family: Inter, system-ui, sans-serif;
 }
 
 body {
   background: var(--bg);
   color: var(--text);
+  line-height: 1.7;
 }
 
 .toggle {
   position: fixed;
-  top: 18px;
-  right: 20px;
+  top: 20px;
+  right: 22px;
   font-size: 1.4rem;
   cursor: pointer;
-  z-index: 100;
+  z-index: 10;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 80px 20px;
 }
 
 header {
-  padding: 90px 20px;
-  text-align: center;
-  background: linear-gradient(180deg, #000000, #050505);
+  margin-bottom: 80px;
 }
 
 header h1 {
-  font-size: 3rem;
-  letter-spacing: 1px;
+  font-size: 3.2rem;
+  font-weight: 700;
 }
 
 header p {
-  margin: 12px 0 25px;
-  font-size: 1.1rem;
+  margin-top: 12px;
+  font-size: 1.15rem;
   opacity: 0.85;
 }
 
 .btn {
+  display: inline-block;
+  margin-top: 25px;
   background: var(--accent);
   color: #000;
   padding: 12px 22px;
   border-radius: 6px;
-  font-weight: bold;
-  display: inline-block;
+  font-weight: 600;
 }
 
 section {
-  padding: 70px 10%;
+  margin-bottom: 80px;
 }
 
 h2 {
-  font-size: 2.1rem;
+  font-size: 1.9rem;
   margin-bottom: 25px;
-  border-bottom: 3px solid var(--accent);
-  display: inline-block;
 }
 
 .card {
   background: var(--card);
   padding: 28px;
-  border-radius: 12px;
-  margin: 20px 0;
+  border-radius: 14px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 15px 40px rgba(34,211,238,0.15);
+  box-shadow: 0 18px 45px rgba(56,189,248,0.15);
 }
 
 ul {
-  margin-left: 22px;
-  line-height: 1.8;
+  padding-left: 20px;
 }
 
-.project-links a {
-  margin-right: 18px;
-  font-weight: bold;
+.project {
+  margin-bottom: 30px;
 }
 
-.assignment-btn {
-  margin-top: 15px;
+.project a {
   display: inline-block;
+  margin-top: 10px;
+  font-weight: 600;
 }
 
 .contact a {
@@ -117,10 +119,8 @@ ul {
 
 footer {
   text-align: center;
-  padding: 25px;
-  background: #050505;
-  font-size: 0.9rem;
-  opacity: 0.8;
+  padding: 30px 0;
+  opacity: 0.7;
 }
 </style>
 </head>
@@ -129,34 +129,37 @@ footer {
 
 <div class="toggle" onclick="toggleTheme()">🌗</div>
 
+<div class="container">
+
 <header>
   <h1>Priyanshu Rawat</h1>
-  <p>Computer Science Student | AI & ML Enthusiast | Python | Java | C</p>
+  <p>Computer Science Student · AI & ML Enthusiast · Python · Java · C</p>
+
   <a class="btn" href="Priyanshu_Rawat_Resume.pdf" download>
     📄 Download Resume
   </a>
 </header>
 
 <section>
-  <h2>About Me</h2>
+  <h2>About</h2>
   <div class="card">
-    I am a motivated 2nd-year B.Tech Computer Science student specializing in Artificial
-    Intelligence and Machine Learning. I have a strong passion for Data Science,
-    problem-solving, and building efficient real-world applications.
+    I am a 2nd-year B.Tech Computer Science student specializing in Artificial Intelligence
+    and Machine Learning. I enjoy solving problems, working with data, and building
+    efficient applications that combine logic with clean design.
     <br><br>
-    I actively practice Data Structures and Algorithms to strengthen my core CS foundations
-    and enjoy working on projects that combine logic, performance, and clean design.
+    I actively practice Data Structures and Algorithms and focus on strengthening my
+    computer science fundamentals through consistent learning and projects.
   </div>
 </section>
 
 <section>
-  <h2>Technical Skills</h2>
+  <h2>Skills</h2>
   <div class="card">
     <ul>
-      <li><b>Programming Languages:</b> Python, C, C++, Java</li>
-      <li><b>Data Science & ML:</b> Pandas, NumPy, Scikit-learn, Matplotlib</li>
-      <li><b>Frameworks & Tools:</b> Streamlit, Git, GitHub</li>
-      <li><b>Core Concepts:</b> OOP, Graph Algorithms, ML Model Deployment</li>
+      <li><b>Languages:</b> Python, C, C++, Java</li>
+      <li><b>ML & Data Science:</b> Pandas, NumPy, Scikit-learn, Matplotlib</li>
+      <li><b>Tools:</b> Git, GitHub, Streamlit</li>
+      <li><b>Concepts:</b> OOP, Graph Algorithms, ML Deployment</li>
     </ul>
   </div>
 </section>
@@ -164,44 +167,36 @@ footer {
 <section>
   <h2>Projects</h2>
 
-  <div class="card">
+  <div class="card project">
     <h3>Travel Route Optimization System</h3>
     <p>
-      A C-based desktop application that computes the shortest and most efficient routes
-      between locations using graph-based algorithms. Designed for optimal path planning
-      and navigation.
+      A C-based desktop application for computing optimal routes using graph algorithms
+      such as Dijkstra’s algorithm.
     </p>
-    <div class="project-links">
-      <a href="https://github.com/Priyanxu05" target="_blank">🔗 View on GitHub</a>
-    </div>
+    <a href="https://github.com/Priyanxu05" target="_blank">→ GitHub</a>
   </div>
 
-  <div class="card">
+  <div class="card project">
     <h3>Weather Prediction System</h3>
     <p>
-      A machine learning-based system that predicts weather patterns using historical
-      climate data. Focused on data preprocessing, model training, and evaluation.
+      A machine learning project that predicts weather patterns based on historical data,
+      focusing on preprocessing, training, and evaluation.
     </p>
-    <div class="project-links">
-      <a href="https://github.com/Priyanxu05" target="_blank">🔗 View on GitHub</a>
-    </div>
+    <a href="https://github.com/Priyanxu05" target="_blank">→ GitHub</a>
   </div>
+
 </section>
 
 <section>
   <h2>Assignments</h2>
-
   <div class="card">
     <p>
       This section contains my academic assignments, lab work, and coursework submissions
-      related to Computer Science, Data Structures, Artificial Intelligence, and other subjects.
-      All assignments are organized and uploaded for easy access and evaluation.
+      organized in a single location for easy access.
     </p>
 
-    <a class="btn assignment-btn"
-       href="https://drive.google.com/"
-       target="_blank">
-       📁 Open Assignments Folder
+    <a class="btn" href="https://drive.google.com/" target="_blank">
+      📁 Open Assignments Folder
     </a>
   </div>
 </section>
@@ -222,8 +217,10 @@ footer {
 </section>
 
 <footer>
-  © 2026 Priyanshu Rawat | Portfolio
+  © 2026 Priyanshu Rawat
 </footer>
+
+</div>
 
 <script>
 function toggleTheme() {
