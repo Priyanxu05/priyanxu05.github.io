@@ -49,6 +49,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -97,7 +98,21 @@
         .hero-content p {
             max-width: 650px;
             color: var(--muted);
+            margin-bottom: 25px;
+        }
+
+        .video-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        video {
+            width: 100%;
+            max-width: 520px;
+            border-radius: 12px;
             margin-bottom: 30px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
         }
 
         .btn-group a {
@@ -182,7 +197,7 @@
         </div>
     </nav>
 
-    <!-- Hero -->
+    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <h1>Priyanshu Rawat</h1>
@@ -192,6 +207,14 @@
                 passionate about data-driven problem solving, algorithms, and building efficient
                 real-world applications.
             </p>
+
+            <div class="video-title">My Introduction</div>
+
+            <video controls>
+                <source src="MyIntroduction.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
             <div class="btn-group">
                 <a href="#projects" class="btn-primary">View Projects</a>
                 <a href="MyResume.pdf" class="btn-outline" target="_blank">Download Resume</a>
@@ -229,7 +252,6 @@
     <section id="projects">
         <h2>Projects</h2>
         <div class="grid">
-
             <div class="card">
                 <h4>Travel Route Optimization System</h4>
                 <p>
@@ -253,13 +275,11 @@
             <div class="card">
                 <h4>Alumni Management System</h4>
                 <p>
-                    System designed to manage records, schedules, and data efficiently using
-                    structured programming concepts.
+                    System designed to manage records efficiently using structured programming.
                 </p>
                 <p><b>Tech:</b> C</p>
                 <a href="https://github.com/Priyanxu05" target="_blank">View Code</a>
             </div>
-
         </div>
     </section>
 
